@@ -1,1 +1,2 @@
-https://www.youtube.com/watch?v=SLB_c_ayRMo
+
+[Terraform Video on YouTube](https://www.youtube.com/watch?v=SLB_c_ayRMo)
