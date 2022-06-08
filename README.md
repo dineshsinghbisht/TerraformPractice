@@ -8,9 +8,9 @@ https://registry.terraform.io/
 
 create .tf file once you are done code. You need to run following commands. Its good to .gitignore file
 
-````terraform init
+```terraform init
 terraform plan
 terraform apply
 terraform destroy
-terraform destroy -target <resourcetype.resource_name>```
-````
+terraform destroy -target <resourcetype.resource_name>
+```
