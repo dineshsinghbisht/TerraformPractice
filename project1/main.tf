@@ -17,7 +17,7 @@ resource "aws_instance" "web" {
   instance_type = "t2.micro"
 
   tags = {
-    Name = "Test-Ec2"
+    Name = "For-Demo"
     Owner = "dinesh"
   }
 }
