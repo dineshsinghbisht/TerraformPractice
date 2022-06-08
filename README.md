@@ -6,7 +6,7 @@ terraform --version
 
 https://registry.terraform.io/browse/providers
 
-create .ft file once you are done code. You need to run following commands
+create .tf file once you are done code. You need to run following commands. Its good to .gitignore file
 terraform init
 terraform plan
 terraform apply
