@@ -1,3 +1,3 @@
 variable "instanceType" {
-    type = string
+  type = string
 }

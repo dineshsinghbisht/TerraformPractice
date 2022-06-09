@@ -7,9 +7,9 @@ terraform {
 }
 
 provider "aws" {
-    region = "eu-west-1"  
-    # access_key =
-    # secret_key =
+  region = "eu-west-1"
+  # access_key =
+  # secret_key =
 }
 
 resource "aws_instance" "web" {
@@ -17,7 +17,7 @@ resource "aws_instance" "web" {
   instance_type = var.instanceType
 
   tags = {
-    Name = "For-Demo"
+    Name  = "For-Demo"
     Owner = "dinesh"
   }
 }
