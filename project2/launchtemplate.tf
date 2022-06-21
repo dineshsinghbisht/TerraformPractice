@@ -14,7 +14,7 @@ resource "aws_launch_template" "launch_template" {
     tags = {
       Name  = "Custom-EC2"
       Owner = var.owner_name
-  }
+    }
   }
   user_data = filebase64("./myscript.sh")
 }

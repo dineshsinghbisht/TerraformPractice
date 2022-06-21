@@ -1,6 +1,6 @@
 
 resource "aws_autoscaling_group" "asg" {
-  vpc_zone_identifier = [aws_subnet.public[0].id, aws_subnet.public[1].id]
+  vpc_zone_identifier = [for subnet in aws_subnet.public : subnet.id]
   desired_capacity    = 2
   max_size            = 2
   min_size            = 2

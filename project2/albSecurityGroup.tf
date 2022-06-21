@@ -1,15 +1,7 @@
-resource "aws_security_group" "ec2_sg" {
-  name        = "allow_alb"
-  description = "Allow TLS inbound traffic"
+resource "aws_security_group" "alb_sg" {
+  name        = "allow_http"
+  description = "Allow http inbound traffic"
   vpc_id      = aws_vpc.main.id
-
-  ingress {
-    description = "incoming ssh"
-    from_port   = 22
-    to_port     = 22
-    protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]
-  }
 
   ingress {
     description = "incoming http request"
@@ -18,7 +10,6 @@ resource "aws_security_group" "ec2_sg" {
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
-
 
   egress {
     from_port        = 0
